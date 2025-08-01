@@ -39,27 +39,27 @@ export function Footer12() {
             <div className="grid grid-cols-1 items-start gap-x-6 gap-y-5 sm:grid-cols-2 sm:gap-x-6 md:gap-x-8 md:gap-y-4">
               <ul>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="/">Home Page</a>
+                  <Link to="/">Home Page</Link>
                 </li>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="/about">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="/services">Our Services</a>
+                  <Link to="/services">Our Services</Link>
                 </li>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="/soccer">Soccer Program</a>
+                  <Link to="/soccer">Soccer Program</Link>
                 </li>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="/contact">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
               <ul>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="#">Support Us</a>
+                  <Link to="#">Support Us</Link>
                 </li>
                 <li className="py-2 text-sm font-semibold">
-                  <a href="#">Join Us</a>
+                  <Link to="#">Join Us</Link>
                 </li>
               </ul>
             </div>
@@ -104,15 +104,15 @@ export function Footer12() {
         <div className="flex flex-col-reverse items-start justify-between pt-6 pb-4 text-sm md:flex-row md:items-center md:pt-8 md:pb-0">
           <p>{`© ${currentYear} 365events. All rights reserved.`}</p>
           <div className="grid grid-flow-col grid-cols-[max-content] items-start justify-start gap-x-3">
-            <a href="#">
+            <Link to="#">
               <BiLogoFacebookCircle className="size-6" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <BiLogoInstagram className="size-6" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <BiLogoYoutube className="size-6" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
