@@ -52,30 +52,30 @@ export function Navbar9() {
         </a>
         <div className="absolute hidden h-screen overflow-auto border-b border-border-primary bg-background-primary px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
           <div className="flex flex-col items-center lg:flex-row">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Home
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               About Us
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              to="/services"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Our Services
-            </a>
-            <a
-              href="/soccer"
+            </Link>
+            <Link
+              to="/soccer"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               365 Soccer Program
-            </a>
+            </Link>
             {/*   <div */}
             {/*     onMouseEnter={useActive.openOnDesktopDropdownMenu} */}
             {/*     onMouseLeave={useActive.closeOnDesktopDropdownMenu} */}
