@@ -1,13 +1,12 @@
 "use client";
 
-import { Badge, Button } from "@relume_io/relume-ui";
+import { Badge } from "@relume_io/relume-ui";
 import Card from "../../../components/Card";
-import { RxChevronRight } from "react-icons/rx";
 
 export function Portfolio14() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container lg:mx-auto">
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20 flex flex-col items-center justify-center">
           <p className="mb-3 font-semibold md:mb-4">Portfolio</p>
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
@@ -33,7 +32,7 @@ export function Portfolio14() {
                 <a href="#">Community Sports Award</a>
               </h3>
               <p>Recognizing local sports initiatives.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Community Impact</a>
                 </Badge>
@@ -44,16 +43,6 @@ export function Portfolio14() {
                   <a href="#">Faith Driven</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
           <Card className="mb-8 break-inside-avoid">
@@ -71,7 +60,7 @@ export function Portfolio14() {
                 <a href="#">Leadership Award</a>
               </h3>
               <p>Honoring outstanding coaching leadership.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Leadership Skills</a>
                 </Badge>
@@ -82,16 +71,6 @@ export function Portfolio14() {
                   <a href="#">Mentorship Program</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
           <Card className="mb-8 break-inside-avoid">
@@ -109,7 +88,7 @@ export function Portfolio14() {
                 <a href="#">Best Practices Award</a>
               </h3>
               <p>Promoting integrity in sports management.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Integrity Focus</a>
                 </Badge>
@@ -120,16 +99,6 @@ export function Portfolio14() {
                   <a href="#">Professional Growth</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
           <Card className="mb-8 break-inside-avoid">
@@ -147,7 +116,7 @@ export function Portfolio14() {
                 <a href="#">Community Engagement Award</a>
               </h3>
               <p>Fostering community through sports events.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Community Service</a>
                 </Badge>
@@ -158,16 +127,6 @@ export function Portfolio14() {
                   <a href="#">Faith Integration</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
           <Card className="mb-8 break-inside-avoid">
@@ -185,7 +144,7 @@ export function Portfolio14() {
                 <a href="#">Youth Sports Award</a>
               </h3>
               <p>Empowering youth through sports.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Youth Empowerment</a>
                 </Badge>
@@ -196,16 +155,6 @@ export function Portfolio14() {
                   <a href="#">Faith-Based</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
           <Card className="mb-8 break-inside-avoid">
@@ -223,7 +172,7 @@ export function Portfolio14() {
                 <a href="#">Overall Excellence Award</a>
               </h3>
               <p>Recognizing holistic development in sports.</p>
-              <div className="mt-3 flex flex-wrap gap-2 md:mt-4">
+              <div className="mt-3 flex flex-wrap gap-2 md:mt-4 text-orange-600">
                 <Badge>
                   <a href="#">Holistic Approach</a>
                 </Badge>
@@ -234,16 +183,6 @@ export function Portfolio14() {
                   <a href="#">Community Focus</a>
                 </Badge>
               </div>
-              <Button
-                title="View project"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-                asChild={true}
-                className="mt-5 md:mt-6"
-              >
-                <a href="#">View project</a>
-              </Button>
             </div>
           </Card>
         </div>
