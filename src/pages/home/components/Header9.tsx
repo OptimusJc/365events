@@ -23,7 +23,7 @@ export function Header9() {
             pagination={{ clickable: true }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="size-full border-2 border-red-500"
+            className="size-full"
           >
             {[1, 2, 3, 4, 5, 6, 7, 8].map((i, el) => {
               return (
