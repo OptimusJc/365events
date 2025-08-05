@@ -5,14 +5,13 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  Button,
 } from "@relume_io/relume-ui";
-import { Link } from "react-router-dom";
+import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Faq3() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
+      <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20 lg:mx-auto">
         <div>
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             FAQs
@@ -21,15 +20,9 @@ export function Faq3() {
             Find answers to your questions about our mission and services below.
           </p>
           <div className="mt-6 md:mt-8">
-            <Link to="/contact">
-              <Button
-                title="Contact"
-                variant="secondary"
-                className="cursor-pointer border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-              >
-                Contact
-              </Button>
-            </Link>
+            <ButtonLink to="/contact" variant="tertiary">
+              Contact Us
+            </ButtonLink>
           </div>
         </div>
         <Accordion type="multiple">
