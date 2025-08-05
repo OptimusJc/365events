@@ -1,12 +1,9 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import { CgGym } from "react-icons/cg";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { GiGrowth } from "react-icons/gi";
 import { MdStart } from "react-icons/md";
-import { RxChevronRight } from "react-icons/rx";
-import { Link } from "react-router-dom";
 import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Layout254() {
