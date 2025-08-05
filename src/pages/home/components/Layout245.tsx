@@ -1,10 +1,7 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
 import { IoBarChartSharp, IoFootball } from "react-icons/io5";
 import { MdSports } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Layout245() {
