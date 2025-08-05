@@ -6,6 +6,7 @@ import { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
 import logo from "@/assets/365events_logo_transparent.png";
 import { ButtonLink } from "./ButtonLink";
+import { Link } from "react-router-dom";
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
