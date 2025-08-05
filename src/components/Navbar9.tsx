@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
 import logo from "@/assets/365events_logo_transparent.png";
-import { Link } from "react-router-dom";
+import { ButtonLink } from "./ButtonLink";
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -208,25 +208,13 @@ export function Navbar9() {
             {/*   </div> */}
           </div>
           <div className="flex items-center gap-4">
-            <Link to="/about">
-              <Button
-                title="Learn More"
-                variant="secondary"
-                size="sm"
-                className="cursor-pointer border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-              >
-                Learn More
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button
-                title="Sign Up"
-                size="sm"
-                className="cursor-pointer border-2 border-orange-500 bg-orange-500 rounded-md hover:bg-orange-600 hover:border-orange-600 text-white transition-colors duration-300"
-              >
-                Sign Up
-              </Button>
-            </Link>
+            <ButtonLink to="/about" variant="secondary">
+              Learn More
+            </ButtonLink>
+
+            <ButtonLink to="/contact" variant="primary">
+              Sign Up
+            </ButtonLink>
           </div>
         </div>
         <button
