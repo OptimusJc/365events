@@ -1,6 +1,9 @@
 "use client";
 
 import { ButtonLink } from "../../../components/ButtonLink";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export function Header9() {
   return (
@@ -10,13 +13,34 @@ export function Header9() {
     >
       <div className="relative flex-1">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-            alt="Relume placeholder image"
-            className="absolute inset-0 size-full object-cover"
-          />
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 6500,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="size-full border-2 border-red-500"
+          >
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((i, el) => {
+              return (
+                <SwiperSlide className="text-center text-xl bg-gray-200">
+                  <div
+                    key={i}
+                    className="size-full object-cover flex items-center justify-center"
+                  >
+                    Image {el}
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
+
       <div className="px-[5%] lg:mx-auto">
         <div className="relative z-10 container">
           <div className="grid grid-rows-1 items-start gap-y-5 py-12 md:grid-cols-2 md:gap-x-12 md:gap-y-8 md:py-18 lg:gap-x-20 lg:gap-y-16 lg:py-20">
