@@ -27,11 +27,11 @@ export function Header9() {
           >
             {[1, 2, 3, 4, 5, 6, 7, 8].map((i, el) => {
               return (
-                <SwiperSlide className="text-center text-xl bg-gray-200">
-                  <div
-                    key={i}
-                    className="size-full object-cover flex items-center justify-center"
-                  >
+                <SwiperSlide
+                  key={i}
+                  className="text-center text-xl bg-gray-200"
+                >
+                  <div className="size-full object-cover flex items-center justify-center">
                     Image {el}
                   </div>
                 </SwiperSlide>
