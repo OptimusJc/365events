@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import {
   BiLogoFacebookCircle,
   BiLogoInstagram,
@@ -8,13 +7,14 @@ import {
 } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import logo from "@/assets/365events_logo_transparent.png";
+import { ButtonLink } from "./ButtonLink";
 
 export function Footer12() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20">
-      <div className="container">
+      <div className="container lg:mx-auto">
         <div className="border-b border-border-primary">
           <div className="mb-12 grid grid-cols-1 gap-x-[8vw] gap-y-12 md:mb-18 md:gap-y-16 lg:mb-20 lg:grid-cols-[1fr_0.5fr] lg:gap-y-20">
             <div className="rb-6 max-w-4xl">
@@ -26,14 +26,9 @@ export function Footer12() {
                 sports and faith.
               </p>
               <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Link to="/contact">
-                  <Button
-                    title="Sign Up"
-                    className="cursor-pointer border-2 border-orange-500 rounded-md bg-white hover:bg-orange-500 hover:border-orange-600 hover:text-white transition-colors duration-300"
-                  >
-                    Sign Up
-                  </Button>
-                </Link>
+                <ButtonLink to="/contact" variant="primary">
+                  Sign Up
+                </ButtonLink>
               </div>
             </div>
             <div className="grid grid-cols-1 items-start gap-x-6 gap-y-5 sm:grid-cols-2 sm:gap-x-6 md:gap-x-8 md:gap-y-4">

@@ -1,15 +1,13 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
 import { IoBarChartSharp, IoFootball } from "react-icons/io5";
 import { MdSports } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Layout245() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container lg:mx-auto">
         <div className="flex flex-col items-start">
           <div className="rb-12 mb-12 grid grid-cols-1 items-center justify-between gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
             <div>
@@ -69,24 +67,13 @@ export function Layout245() {
             </div>
           </div>
           <div className="mt-10 flex items-center gap-4 md:mt-14 lg:mt-16">
-            <Link to="/about">
-              <Button
-                variant="secondary"
-                className="cursor-pointer border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-              >
-                Learn More
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button
-                iconRight={<RxChevronRight />}
-                variant="link"
-                size="link"
-                className="flex items-center gap-2 cursor-pointer text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-              >
-                Sign Up
-              </Button>
-            </Link>
+            <ButtonLink to="/about" variant="tertiary">
+              Learn More
+            </ButtonLink>
+
+            <ButtonLink to="/contact" variant="chevron">
+              Sign Up
+            </ButtonLink>
           </div>
         </div>
       </div>

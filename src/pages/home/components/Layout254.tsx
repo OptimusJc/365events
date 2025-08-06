@@ -1,13 +1,15 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { CgGym } from "react-icons/cg";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { GiGrowth } from "react-icons/gi";
+import { MdStart } from "react-icons/md";
+import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Layout254() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container lg:mx-auto">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
             <p className="mb-3 font-semibold md:mb-4">Join</p>
@@ -25,11 +27,7 @@ export function Layout254() {
           <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                  className="size-12"
-                  alt="Relume logo"
-                />
+                <MdStart className="w-12 h-12" />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 How to Get Started
@@ -41,11 +39,7 @@ export function Layout254() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                  className="size-12"
-                  alt="Relume logo"
-                />
+                <CgGym className="w-12 h-12" />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 Participate in Activities
@@ -66,11 +60,7 @@ export function Layout254() {
           <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                  className="size-12"
-                  alt="Relume logo"
-                />
+                <FaPeopleGroup className="w-12 h-12" />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 Experience Community Support
@@ -82,11 +72,7 @@ export function Layout254() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                  className="size-12"
-                  alt="Relume logo"
-                />
+                <GiGrowth className="w-12 h-12" />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 Grow in Faith
@@ -99,24 +85,12 @@ export function Layout254() {
           </div>
         </div>
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
-          <Link to="/about">
-            <Button
-              variant="secondary"
-              className="cursor-pointer border-2 border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-            >
-              Learn More
-            </Button>
-          </Link>
-          <Link to="/contact">
-            <Button
-              iconRight={<RxChevronRight />}
-              variant="link"
-              size="link"
-              className="flex items-center gap-2 cursor-pointer text-gray-700 hover:bg-gray-100 hover:border-gray-400 hover:text-black transition-colors"
-            >
-              Sign Up
-            </Button>
-          </Link>
+          <ButtonLink to="/about" variant="tertiary">
+            Learn More
+          </ButtonLink>
+          <ButtonLink to="/contact" variant="chevron">
+            Sign Up
+          </ButtonLink>
         </div>
       </div>
     </section>
