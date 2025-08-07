@@ -24,7 +24,7 @@ export function Header47() {
               growth.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <ButtonLink to="/contact" variant="tertiary">
+              <ButtonLink to="/contact" variant="secondary">
                 Join Us
               </ButtonLink>
             </div>
