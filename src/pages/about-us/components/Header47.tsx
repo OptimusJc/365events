@@ -6,7 +6,7 @@ export function Header47() {
   return (
     <section
       id="relume"
-      className="px-[5%] py-16 md:py-24 lg:py-28 bg-orange-100"
+      className="px-[5%] py-16 md:py-24 lg:py-28 bg-orange-200"
     >
       <div className="container lg:mx-auto">
         <div className="flex flex-col gap-5 md:flex-row md:gap-12 lg:gap-20">
