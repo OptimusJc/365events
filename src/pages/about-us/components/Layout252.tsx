@@ -1,26 +1,24 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
+import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Layout252() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container lg:mx-auto">
         <div className="mb-12 grid grid-cols-1 items-start gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 lg:mb-20 lg:gap-x-20">
           <div>
             <h2 className="text-4xl leading-[1.2] font-bold md:text-5xl lg:text-6xl">
-              Introducing Our Vision for the Future of Sports Excellence
+              Our Core Values: The Foundation of 365Events' Mission and Vision
             </h2>
           </div>
           <div>
             <p className="md:text-md">
-              At 365Events, we are committed to creating a state-of-the-art CAF
-              category 3 stadium that embodies excellence and opportunity. This
-              facility will support a variety of sports activities, fostering a
-              vibrant community of athletes and fans alike. Our vision
-              integrates godly values, ensuring that every event promotes
-              teamwork, discipline, and spiritual growth.
+              At 365Events, our core values guide every decision and action we
+              take. We believe in professionalism, community empowerment,
+              integrity, and innovation as the pillars of our organization.
+              These values not only shape our operations but also inspire the
+              young athletes we serve.
             </p>
           </div>
         </div>
@@ -34,16 +32,14 @@ export function Layout252() {
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Features That Elevate the Game Experience
+              Professionalism: Setting Standards in Sports Management and
+              Manufacturing
             </h3>
-            <p>
-              Our stadium will feature cutting-edge technology and amenities for
-              all.
-            </p>
+            <p>We uphold the highest standards in every aspect of our work.</p>
             <div className="mt-6 flex items-center gap-4 md:mt-8">
-              <Button iconRight={<RxChevronRight />} variant="link" size="link">
+              <ButtonLink to="/contact" variant="chevron">
                 Learn More
-              </Button>
+              </ButtonLink>
             </div>
           </div>
           <div className="w-full">
@@ -55,16 +51,17 @@ export function Layout252() {
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Support for Diverse Sports Activities and Events
+              Community Empowerment: Building Stronger Futures Through Sports
+              and Engagement
             </h3>
             <p>
-              From soccer to athletics, our stadium will host a wide range of
-              sports.
+              We strive to uplift our community by fostering talent and
+              opportunities.
             </p>
             <div className="mt-6 flex items-center gap-4 md:mt-8">
-              <Button iconRight={<RxChevronRight />} variant="link" size="link">
+              <ButtonLink to="/contact" variant="chevron">
                 Sign Up
-              </Button>
+              </ButtonLink>
             </div>
           </div>
           <div className="w-full">
@@ -76,15 +73,16 @@ export function Layout252() {
               />
             </div>
             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
-              Creating Opportunities for Community Engagement and Growth
+              Integrity: Trust and Honesty in Every Interaction and Partnership
             </h3>
             <p>
-              Our stadium will serve as a hub for community events and outreach.
+              We believe in transparency and accountability in all our
+              endeavors.
             </p>
             <div className="mt-6 flex items-center gap-4 md:mt-8">
-              <Button iconRight={<RxChevronRight />} variant="link" size="link">
-                Join Us
-              </Button>
+              <ButtonLink to="/contact" variant="chevron">
+                Contact
+              </ButtonLink>
             </div>
           </div>
         </div>
