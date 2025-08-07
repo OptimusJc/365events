@@ -13,7 +13,7 @@ export function Layout89() {
               Management
             </h3>
           </div>
-          <div>
+          <div className="lg:max-w-2xl">
             <p className="text-medium">
               At 365Events, we strive to be a benchmark in the sports industry.
               Our mission is to foster social and economic growth through
