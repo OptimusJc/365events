@@ -13,7 +13,7 @@ export function Layout252() {
             </h2>
           </div>
           <div>
-            <p className="md:text-md">
+            <p className="md:text-md lg:max-w-2xl">
               At 365Events, our core values guide every decision and action we
               take. We believe in professionalism, community empowerment,
               integrity, and innovation as the pillars of our organization.
