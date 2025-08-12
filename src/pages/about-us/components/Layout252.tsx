@@ -5,7 +5,7 @@ import { ButtonLink } from "../../../components/ButtonLink";
 export function Layout252() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container lg:mx-auto">
+      <div className="container mx-auto">
         <div className="mb-12 grid grid-cols-1 items-start gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 lg:mb-20 lg:gap-x-20">
           <div>
             <h2 className="text-4xl leading-[1.2] font-bold md:text-5xl lg:text-6xl">

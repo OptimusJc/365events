@@ -8,7 +8,7 @@ export function Layout89() {
       <div className="container lg:mx-auto">
         <div className="mb-12 grid grid-cols-1 items-start justify-between gap-x-12 gap-y-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
           <div>
-            <h3 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl xg:text-8xl">
+            <h3 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-5xl lg:text-7xl">
               Our Mission: Setting Standards in Sports Manufacturing and
               Management
             </h3>

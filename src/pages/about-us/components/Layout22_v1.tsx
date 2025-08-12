@@ -6,10 +6,10 @@ export function Layout22_v1() {
       id="relume"
       className="px-[5%] py-16 md:py-24 lg:py-28 bg-orange-200"
     >
-      <div className="container lg:mx-auto">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl xl:text-8xl">
+            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-6xl xl:text-8xl">
               Our Values: Inspiring Discipline, Purpose, and Service in Sports
               and Community.
             </h2>
