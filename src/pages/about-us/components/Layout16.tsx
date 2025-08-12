@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { IoFootballOutline } from "react-icons/io5";
 import { MdOutlineHighQuality } from "react-icons/md";
 import { MdOutlineSports } from "react-icons/md";

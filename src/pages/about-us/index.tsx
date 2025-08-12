@@ -1,6 +1,5 @@
 import { Header47 } from "./components/Header47";
 import { Layout22 } from "./components/Layout22";
-import { Layout10 } from "./components/Layout10";
 import { Layout252 } from "./components/Layout252";
 import { Team16 } from "./components/Team16";
 import { Logo3 } from "./components/Logo3";

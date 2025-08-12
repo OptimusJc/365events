@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 export function Layout89() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28 bg-orange-200">
