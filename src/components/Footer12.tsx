@@ -18,7 +18,7 @@ export function Footer12() {
         <div className="border-b border-border-primary">
           <div className="mb-12 grid grid-cols-1 gap-x-[8vw] gap-y-12 md:mb-18 md:gap-y-16 lg:mb-20 lg:grid-cols-[1fr_0.5fr] lg:gap-y-20">
             <div className="rb-6 max-w-4xl">
-              <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
+              <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-7xl lg:text-9xl">
                 Get in Touch with Us
               </h1>
               <p>
