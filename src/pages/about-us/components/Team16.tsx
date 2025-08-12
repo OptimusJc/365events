@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export function Team16() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container grid grid-cols-1 items-start md:grid-flow-row md:gap-x-12 lg:gap-x-20">
+      <div className="container lg:mx-auto grid grid-cols-1 items-start md:grid-flow-row md:gap-x-12 lg:gap-x-20">
         <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
           <p className="mb-3 font-semibold md:mb-4">Team</p>
           <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">

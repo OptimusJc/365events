@@ -23,7 +23,7 @@ const Circle = () => {
   );
 };
 
-export function Timeline1() {
+export function TimelineUpdate() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
