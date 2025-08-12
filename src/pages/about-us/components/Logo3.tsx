@@ -37,7 +37,7 @@ const logos = [
 export function Logo3() {
   return (
     <>
-      <style jsx>
+      <style>
         {`
           @keyframes loop-horizontally {
             0% {
