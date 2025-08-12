@@ -41,11 +41,11 @@ export function Header9() {
         </div>
       </div>
 
-      <div className="px-[5%] lg:mx-auto">
+      <div className="px-[5%] mx-auto">
         <div className="relative z-10 container">
           <div className="grid grid-rows-1 items-start gap-y-5 py-12 md:grid-cols-2 md:gap-x-12 md:gap-y-8 md:py-18 lg:gap-x-20 lg:gap-y-16 lg:py-20">
             <div>
-              <h1 className="text-5xl font-bold text-text-primary md:text-9xl lg:text-6xl">
+              <h1 className="text-5xl font-bold text-text-primary md:text-6xl lg:text-7xl">
                 Empowering Sports For A Brigher Future
               </h1>
             </div>

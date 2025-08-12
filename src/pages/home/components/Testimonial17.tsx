@@ -1,13 +1,12 @@
 "use client";
 
-// import { Card } from "@relume_io/relume-ui";
 import Card from "../../../components/Card";
 import { BiSolidStar } from "react-icons/bi";
 
 export function Testimonial17() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container lg:mx-auto">
+      <div className="container mx-auto">
         <div className="mx-auto mb-12 w-full max-w-2xl text-center md:mb-18 lg:mb-20">
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             Customer Testimonials

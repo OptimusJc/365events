@@ -7,12 +7,12 @@ import { ButtonLink } from "../../../components/ButtonLink";
 export function Layout245() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container lg:mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col items-start">
           <div className="rb-12 mb-12 grid grid-cols-1 items-center justify-between gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
             <div>
               <p className="mb-3 font-semibold md:mb-4">Empower</p>
-              <h2 className="text-5xl font-bold md:text-7xl lg:text-7xl">
+              <h2 className="text-5xl font-bold lg:text-8xl">
                 Transforming Local Sports Through Innovation and Passion
               </h2>
             </div>
