@@ -61,7 +61,7 @@ export function Logo3() {
         id="relume"
         className="overflow-hidden py-12 md:py-16 lg:py-20 bg-gray-100"
       >
-        <div className="container lg:mx-auto mb-8 w-full max-w-lg px-[5%] md:mb-10 lg:mb-12">
+        <div className="container mx-auto mb-8 w-full max-w-lg px-[5%] md:mb-10 lg:mb-12">
           <h1 className="text-center text-base leading-[1.2] font-bold md:text-lg md:leading-[1.2]">
             Trusted by top organizations and community partners
           </h1>
@@ -74,7 +74,7 @@ export function Logo3() {
                   key={`first-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="mx-7 max-h-12 shrink-0 md:mx-10 md:max-h-14"
+                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20"
                 />
               ))}
             </div>
@@ -84,7 +84,7 @@ export function Logo3() {
                   key={`first-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="mx-7 max-h-12 shrink-0 md:mx-10 md:max-h-14"
+                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20"
                 />
               ))}
             </div>
