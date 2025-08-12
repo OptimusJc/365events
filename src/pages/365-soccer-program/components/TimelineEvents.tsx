@@ -2,7 +2,7 @@
 
 import { Button } from "@relume_io/relume-ui";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { RxChevronRight } from "react-icons/rx";
 
 const Circle = () => {
