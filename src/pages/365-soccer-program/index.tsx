@@ -13,7 +13,6 @@ import { Layout209 } from "./components/Layout209";
 import { Gallery3 } from "./components/Gallery3";
 import { Layout4 } from "./components/Layout4";
 import { Testimonial13 } from "./components/Testimonial13.jsx";
-import { Event34 } from "./components/Event34.jsx";
 
 export default function Page() {
   return (
