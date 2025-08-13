@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Cta3() {
