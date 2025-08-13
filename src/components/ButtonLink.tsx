@@ -10,6 +10,7 @@ interface ButtonLinkProps
   variant?: Variant;
   className?: string;
   external?: boolean; // opens in new tab
+  onMobileClick?: () => void;
 }
 
 const baseStyles =
@@ -29,10 +30,18 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
   variant = "primary",
   className,
   external = false,
+  onMobileClick,
   children,
   ...props
 }) => {
   const classes = twMerge(baseStyles, variantStyles[variant], className);
+
+  const handleClick = () => {
+    if (onMobileClick) {
+      onMobileClick();
+    }
+  };
+
   const content = (
     <>
       <span>{children}</span>
@@ -49,6 +58,7 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
         className={classes}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleClick}
         {...props}
       >
         {content}
@@ -57,7 +67,7 @@ export const ButtonLink: React.FC<ButtonLinkProps> = ({
   }
 
   return (
-    <Link to={to} className={classes} {...props}>
+    <Link to={to} className={classes} onClick={handleClick} {...props}>
       {content}
     </Link>
   );

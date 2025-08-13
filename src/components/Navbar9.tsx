@@ -1,9 +1,8 @@
 "use client";
 
-import { Button, useMediaQuery } from "@relume_io/relume-ui";
+import { useMediaQuery } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { RxChevronDown } from "react-icons/rx";
 import logo from "@/assets/365events_logo_transparent.png";
 import { ButtonLink } from "./ButtonLink";
 import { Link } from "react-router-dom";
@@ -45,13 +44,13 @@ export function Navbar9() {
   return (
     <section
       id="relume"
-      className="relative z-[999] flex min-h-16 w-full items-center border-b border-border-primary bg-background-primary px-[5%] md:min-h-18"
+      className="relative z-[999] flex min-h-16 w-full items-center border-b border-orange-600 bg-white px-[5%] md:min-h-18"
     >
       <div className="mx-auto flex size-full max-w-full items-center justify-between">
         <a href="/">
-          <img src={logo} alt="Logo image" className="h-24 w-24" />
+          <img src={logo} alt="Logo image" className="h-20 w-20" />
         </a>
-        <div className="absolute hidden h-screen overflow-auto border-b border-border-primary bg-background-primary px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
+        <div className="absolute hidden h-screen overflow-auto border-2 border-orange-600 bg-white px-[5%] pt-4 pb-24 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
           <div className="flex flex-col items-center lg:flex-row">
             <Link
               to="/"
@@ -77,136 +76,136 @@ export function Navbar9() {
             >
               365 Soccer Program
             </Link>
-            {/*   <div */}
-            {/*     onMouseEnter={useActive.openOnDesktopDropdownMenu} */}
-            {/*     onMouseLeave={useActive.closeOnDesktopDropdownMenu} */}
+            {/* <div */}
+            {/*   onMouseEnter={useActive.openOnDesktopDropdownMenu} */}
+            {/*   onMouseLeave={useActive.closeOnDesktopDropdownMenu} */}
+            {/* > */}
+            {/*   <button */}
+            {/*     className="relative flex w-full items-center justify-between py-3 text-md whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6 lg:text-base" */}
+            {/*     onClick={useActive.openOnMobileDropdownMenu} */}
             {/*   > */}
-            {/*     <button */}
-            {/*       className="relative flex w-full items-center justify-between py-3 text-md whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6 lg:text-base" */}
-            {/*       onClick={useActive.openOnMobileDropdownMenu} */}
+            {/*     <span>Soccer Program</span> */}
+            {/*     <motion.span */}
+            {/*       animate={useActive.animateDropdownMenuIcon} */}
+            {/*       variants={{ */}
+            {/*         rotated: { rotate: 180 }, */}
+            {/*         initial: { rotate: 0 }, */}
+            {/*       }} */}
+            {/*       transition={{ duration: 0.3 }} */}
             {/*     > */}
-            {/*       <span>Soccer Program</span> */}
-            {/*       <motion.span */}
-            {/*         animate={useActive.animateDropdownMenuIcon} */}
-            {/*         variants={{ */}
-            {/*           rotated: { rotate: 180 }, */}
-            {/*           initial: { rotate: 0 }, */}
-            {/*         }} */}
-            {/*         transition={{ duration: 0.3 }} */}
-            {/*       > */}
-            {/*         <RxChevronDown /> */}
-            {/*       </motion.span> */}
-            {/*     </button> */}
-            {/*     <AnimatePresence> */}
-            {/*       <motion.nav */}
-            {/*         variants={{ */}
-            {/*           open: { */}
-            {/*             opacity: 1, */}
-            {/*             height: "var(--height-open, auto)", */}
-            {/*             display: "block", */}
-            {/*           }, */}
-            {/*           close: { */}
-            {/*             opacity: 0, */}
-            {/*             height: "var(--height-close, 0)", */}
-            {/*             display: "none", */}
-            {/*           }, */}
-            {/*         }} */}
-            {/*         animate={useActive.animateDropdownMenu} */}
-            {/*         initial="close" */}
-            {/*         exit="close" */}
-            {/*         transition={{ duration: 0.2 }} */}
-            {/*         className="top-full bottom-auto left-0 w-full max-w-full min-w-full overflow-hidden bg-background-primary lg:absolute lg:w-screen lg:border-b lg:border-border-primary lg:px-[5%] lg:[--height-close:auto]" */}
-            {/*       > */}
-            {/*         <div className="mx-auto flex size-full max-w-full items-center justify-between"> */}
-            {/*           <div className="flex w-full flex-col lg:flex-row"> */}
-            {/*             <div className="grid flex-1 grid-cols-1 content-start items-start gap-x-8 gap-y-2 py-4 md:grid-cols-2 md:gap-y-6 md:py-8 lg:auto-cols-fr lg:grid-cols-4 lg:content-stretch lg:items-stretch lg:gap-y-0"> */}
-            {/*               <a */}
-            {/*                 href="#" */}
-            {/*                 className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
-            {/*               > */}
-            {/*                 <div className="flex size-6 flex-col items-center justify-center"> */}
-            {/*                   <img */}
-            {/*                     src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
-            {/*                     alt="Icon 1" */}
-            {/*                     className="shrink-0" */}
-            {/*                   /> */}
-            {/*                 </div> */}
-            {/*                 <div className="flex flex-col items-start justify-center"> */}
-            {/*                   <h5 className="font-semibold">Welcome Home</h5> */}
-            {/*                   <p className="hidden text-sm md:block"> */}
-            {/*                     Explore our mission and values in sports. */}
-            {/*                   </p> */}
-            {/*                 </div> */}
-            {/*               </a> */}
-            {/*               <a */}
-            {/*                 href="#" */}
-            {/*                 className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
-            {/*               > */}
-            {/*                 <div className="flex size-6 flex-col items-center justify-center"> */}
-            {/*                   <img */}
-            {/*                     src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
-            {/*                     alt="Icon 1" */}
-            {/*                     className="shrink-0" */}
-            {/*                   /> */}
-            {/*                 </div> */}
-            {/*                 <div className="flex flex-col items-start justify-center"> */}
-            {/*                   <h5 className="font-semibold">Join Us</h5> */}
-            {/*                   <p className="hidden text-sm md:block"> */}
-            {/*                     Become part of our community today. */}
-            {/*                   </p> */}
-            {/*                 </div> */}
-            {/*               </a> */}
-            {/*               <a */}
-            {/*                 href="#" */}
-            {/*                 className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
-            {/*               > */}
-            {/*                 <div className="flex size-6 flex-col items-center justify-center"> */}
-            {/*                   <img */}
-            {/*                     src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
-            {/*                     alt="Icon 1" */}
-            {/*                     className="shrink-0" */}
-            {/*                   /> */}
-            {/*                 </div> */}
-            {/*                 <div className="flex flex-col items-start justify-center"> */}
-            {/*                   <h5 className="font-semibold">Get Involved</h5> */}
-            {/*                   <p className="hidden text-sm md:block"> */}
-            {/*                     Discover how you can participate with us. */}
-            {/*                   </p> */}
-            {/*                 </div> */}
-            {/*               </a> */}
-            {/*               <a */}
-            {/*                 href="#" */}
-            {/*                 className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
-            {/*               > */}
-            {/*                 <div className="flex size-6 flex-col items-center justify-center"> */}
-            {/*                   <img */}
-            {/*                     src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
-            {/*                     alt="Icon 1" */}
-            {/*                     className="shrink-0" */}
-            {/*                   /> */}
-            {/*                 </div> */}
-            {/*                 <div className="flex flex-col items-start justify-center"> */}
-            {/*                   <h5 className="font-semibold">Contact Us</h5> */}
-            {/*                   <p className="hidden text-sm md:block"> */}
-            {/*                     We're here to answer your questions. */}
-            {/*                   </p> */}
-            {/*                 </div> */}
-            {/*               </a> */}
-            {/*             </div> */}
-            {/*           </div> */}
-            {/*         </div> */}
-            {/*         <div className="relative mb-6 flex w-full flex-col items-start justify-between p-6 sm:items-center lg:mb-0 lg:flex-row lg:px-0 lg:py-3"> */}
-            {/*           <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-background-secondary" /> */}
-            {/*           <div className="relative z-10 mr-auto flex flex-col gap-y-4 sm:mx-auto sm:grid sm:auto-cols-fr sm:grid-cols-[max-content_max-content] sm:gap-x-1"> */}
-            {/*             <p>Looking for a new opportunity?</p> */}
-            {/*             <a href="#" className="underline"> */}
-            {/*               Get in touch */}
+            {/*       <RxChevronDown /> */}
+            {/*     </motion.span> */}
+            {/*   </button> */}
+            {/*   <AnimatePresence> */}
+            {/*     <motion.nav */}
+            {/*       variants={{ */}
+            {/*         open: { */}
+            {/*           opacity: 1, */}
+            {/*           height: "var(--height-open, auto)", */}
+            {/*           display: "block", */}
+            {/*         }, */}
+            {/*         close: { */}
+            {/*           opacity: 0, */}
+            {/*           height: "var(--height-close, 0)", */}
+            {/*           display: "none", */}
+            {/*         }, */}
+            {/*       }} */}
+            {/*       animate={useActive.animateDropdownMenu} */}
+            {/*       initial="close" */}
+            {/*       exit="close" */}
+            {/*       transition={{ duration: 0.2 }} */}
+            {/*       className="top-full bottom-auto left-0 w-full max-w-full min-w-full overflow-hidden bg-background-primary lg:absolute lg:w-screen lg:border-b lg:border-border-primary lg:px-[5%] lg:[--height-close:auto]" */}
+            {/*     > */}
+            {/*       <div className="mx-auto flex size-full max-w-full items-center justify-between"> */}
+            {/*         <div className="flex w-full flex-col lg:flex-row"> */}
+            {/*           <div className="grid flex-1 grid-cols-1 content-start items-start gap-x-8 gap-y-2 py-4 md:grid-cols-2 md:gap-y-6 md:py-8 lg:auto-cols-fr lg:grid-cols-4 lg:content-stretch lg:items-stretch lg:gap-y-0"> */}
+            {/*             <a */}
+            {/*               href="#" */}
+            {/*               className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
+            {/*             > */}
+            {/*               <div className="flex size-6 flex-col items-center justify-center"> */}
+            {/*                 <img */}
+            {/*                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
+            {/*                   alt="Icon 1" */}
+            {/*                   className="shrink-0" */}
+            {/*                 /> */}
+            {/*               </div> */}
+            {/*               <div className="flex flex-col items-start justify-center"> */}
+            {/*                 <h5 className="font-semibold">Welcome Home</h5> */}
+            {/*                 <p className="hidden text-sm md:block"> */}
+            {/*                   Explore our mission and values in sports. */}
+            {/*                 </p> */}
+            {/*               </div> */}
+            {/*             </a> */}
+            {/*             <a */}
+            {/*               href="#" */}
+            {/*               className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
+            {/*             > */}
+            {/*               <div className="flex size-6 flex-col items-center justify-center"> */}
+            {/*                 <img */}
+            {/*                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
+            {/*                   alt="Icon 1" */}
+            {/*                   className="shrink-0" */}
+            {/*                 /> */}
+            {/*               </div> */}
+            {/*               <div className="flex flex-col items-start justify-center"> */}
+            {/*                 <h5 className="font-semibold">Join Us</h5> */}
+            {/*                 <p className="hidden text-sm md:block"> */}
+            {/*                   Become part of our community today. */}
+            {/*                 </p> */}
+            {/*               </div> */}
+            {/*             </a> */}
+            {/*             <a */}
+            {/*               href="#" */}
+            {/*               className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
+            {/*             > */}
+            {/*               <div className="flex size-6 flex-col items-center justify-center"> */}
+            {/*                 <img */}
+            {/*                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
+            {/*                   alt="Icon 1" */}
+            {/*                   className="shrink-0" */}
+            {/*                 /> */}
+            {/*               </div> */}
+            {/*               <div className="flex flex-col items-start justify-center"> */}
+            {/*                 <h5 className="font-semibold">Get Involved</h5> */}
+            {/*                 <p className="hidden text-sm md:block"> */}
+            {/*                   Discover how you can participate with us. */}
+            {/*                 </p> */}
+            {/*               </div> */}
+            {/*             </a> */}
+            {/*             <a */}
+            {/*               href="#" */}
+            {/*               className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2" */}
+            {/*             > */}
+            {/*               <div className="flex size-6 flex-col items-center justify-center"> */}
+            {/*                 <img */}
+            {/*                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg" */}
+            {/*                   alt="Icon 1" */}
+            {/*                   className="shrink-0" */}
+            {/*                 /> */}
+            {/*               </div> */}
+            {/*               <div className="flex flex-col items-start justify-center"> */}
+            {/*                 <h5 className="font-semibold">Contact Us</h5> */}
+            {/*                 <p className="hidden text-sm md:block"> */}
+            {/*                   We're here to answer your questions. */}
+            {/*                 </p> */}
+            {/*               </div> */}
             {/*             </a> */}
             {/*           </div> */}
             {/*         </div> */}
-            {/*       </motion.nav> */}
-            {/*     </AnimatePresence> */}
-            {/*   </div> */}
+            {/*       </div> */}
+            {/*       <div className="relative mb-6 flex w-full flex-col items-start justify-between p-6 sm:items-center lg:mb-0 lg:flex-row lg:px-0 lg:py-3"> */}
+            {/*         <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-background-secondary" /> */}
+            {/*         <div className="relative z-10 mr-auto flex flex-col gap-y-4 sm:mx-auto sm:grid sm:auto-cols-fr sm:grid-cols-[max-content_max-content] sm:gap-x-1"> */}
+            {/*           <p>Looking for a new opportunity?</p> */}
+            {/*           <a href="#" className="underline"> */}
+            {/*             Get in touch */}
+            {/*           </a> */}
+            {/*         </div> */}
+            {/*       </div> */}
+            {/*     </motion.nav> */}
+            {/*   </AnimatePresence> */}
+            {/* </div> */}
           </div>
           <div className="flex items-center gap-4">
             <ButtonLink to="/about" variant="secondary">
@@ -276,152 +275,39 @@ export function Navbar9() {
             initial="close"
             exit="close"
             transition={{ duration: 0.4 }}
-            className="absolute top-0 right-0 left-0 block h-dvh overflow-auto border-b border-border-primary bg-background-primary px-[5%] pt-4 pb-8"
+            className="absolute top-0 right-0 left-0 block h-dvh overflow-auto border-b border-border-primary bg-white px-[5%] pt-4 pb-8"
           >
             <div className="flex flex-col">
-              <a href="#" className="block py-3 text-md">
-                Link One
+              <a href="/" className="block py-3 text-md">
+                Home
               </a>
-              <a href="#" className="block py-3 text-md">
-                Link Two
+              <a href="/about" className="block py-3 text-md">
+                About Us
               </a>
-              <a href="#" className="block py-3 text-md">
-                Link Three
+              <a href="/services" className="block py-3 text-md">
+                Our Services
               </a>
-              <div>
-                <button
-                  className="relative flex w-full items-center justify-between py-3 text-md whitespace-nowrap lg:w-auto lg:justify-start lg:gap-2 lg:px-4 lg:py-6 lg:text-base"
-                  onClick={useActive.openOnMobileDropdownMenu}
-                >
-                  <span>Link Four</span>
-                  <motion.span
-                    animate={useActive.animateDropdownMenuIcon}
-                    variants={{
-                      rotated: { rotate: 180 },
-                      initial: { rotate: 0 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <RxChevronDown />
-                  </motion.span>
-                </button>
-                <AnimatePresence>
-                  <motion.nav
-                    variants={{
-                      open: {
-                        opacity: 1,
-                        height: "var(--height-open, auto)",
-                        display: "block",
-                      },
-                      close: {
-                        opacity: 0,
-                        height: "var(--height-close, 0)",
-                        display: "none",
-                      },
-                    }}
-                    animate={useActive.animateDropdownMenu}
-                    initial="close"
-                    exit="close"
-                    transition={{ duration: 0.2 }}
-                    className="top-full bottom-auto left-0 w-full max-w-full min-w-full overflow-hidden bg-background-primary lg:absolute lg:w-screen lg:border-b lg:border-border-primary lg:px-[5%] lg:[--height-close:auto]"
-                  >
-                    <div className="mx-auto flex size-full max-w-full items-center justify-between">
-                      <div className="flex w-full flex-col lg:flex-row">
-                        <div className="grid flex-1 grid-cols-1 content-start items-start gap-x-8 gap-y-2 py-4 md:grid-cols-2 md:gap-y-6 md:py-8 lg:auto-cols-fr lg:grid-cols-4 lg:content-stretch lg:items-stretch lg:gap-y-0">
-                          <a
-                            href="#"
-                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
-                          >
-                            <div className="flex size-6 flex-col items-center justify-center">
-                              <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                                alt="Icon 1"
-                                className="shrink-0"
-                              />
-                            </div>
-                            <div className="flex flex-col items-start justify-center">
-                              <h5 className="font-semibold">Page one</h5>
-                              <p className="hidden text-sm md:block">
-                                Lorem ipsum dolor sit amet consectetur elit
-                              </p>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
-                          >
-                            <div className="flex size-6 flex-col items-center justify-center">
-                              <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                                alt="Icon 2"
-                                className="shrink-0"
-                              />
-                            </div>
-                            <div className="flex flex-col items-start justify-center">
-                              <h5 className="font-semibold">Page two</h5>
-                              <p className="hidden text-sm md:block">
-                                Lorem ipsum dolor sit amet consectetur elit
-                              </p>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
-                          >
-                            <div className="flex size-6 flex-col items-center justify-center">
-                              <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                                alt="Icon 3"
-                                className="shrink-0"
-                              />
-                            </div>
-                            <div className="flex flex-col items-start justify-center">
-                              <h5 className="font-semibold">Page three</h5>
-                              <p className="hidden text-sm md:block">
-                                Lorem ipsum dolor sit amet consectetur elit
-                              </p>
-                            </div>
-                          </a>
-                          <a
-                            href="#"
-                            className="grid w-full auto-cols-fr grid-cols-[max-content_1fr] items-start gap-x-3 py-2"
-                          >
-                            <div className="flex size-6 flex-col items-center justify-center">
-                              <img
-                                src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                                alt="Icon 4"
-                                className="shrink-0"
-                              />
-                            </div>
-                            <div className="flex flex-col items-start justify-center">
-                              <h5 className="font-semibold">Page four</h5>
-                              <p className="hidden text-sm md:block">
-                                Lorem ipsum dolor sit amet consectetur elit
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="relative mb-6 flex w-full flex-col items-start justify-between p-6 sm:items-center lg:mb-0 lg:flex-row lg:px-0 lg:py-3">
-                      <div className="absolute top-0 -right-[50vw] bottom-0 -left-[50vw] w-[200vw] bg-background-secondary" />
-                      <div className="relative z-10 mr-auto flex flex-col gap-y-4 sm:mx-auto sm:grid sm:auto-cols-fr sm:grid-cols-[max-content_max-content] sm:gap-x-1">
-                        <p>Looking for a new career?</p>
-                        <a href="#" className="underline">
-                          Get in touch
-                        </a>
-                      </div>
-                    </div>
-                  </motion.nav>
-                </AnimatePresence>
-              </div>
+              <a href="/soccer" className="block py-3 text-md">
+                Soccer Program
+              </a>
+
               <div className="mt-6 flex flex-col gap-4">
-                <Button title="Button" variant="secondary" size="sm">
-                  Button
-                </Button>
-                <Button title="Button" size="sm">
-                  Button
-                </Button>
+                <ButtonLink
+                  to="/about"
+                  variant="secondary"
+                  className="text-center"
+                  onMobileClick={useActive.toggleMobileMenu}
+                >
+                  Learn More
+                </ButtonLink>
+                <ButtonLink
+                  to="/contact"
+                  variant="primary"
+                  className="text-center"
+                  onMobileClick={useActive.toggleMobileMenu}
+                >
+                  Sign Up
+                </ButtonLink>
               </div>
             </div>
           </motion.div>
