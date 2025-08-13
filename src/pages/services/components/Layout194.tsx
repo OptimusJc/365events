@@ -2,8 +2,11 @@
 
 export function Layout194() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+    <section
+      id="relume"
+      className="px-[5%] py-16 md:py-24 lg:py-28 bg-orange-100"
+    >
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
           <div className="order-2 md:order-1">
             <img
