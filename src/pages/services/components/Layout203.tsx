@@ -1,9 +1,12 @@
 "use client";
 
+import { IoMdCalendar } from "react-icons/io";
+import { PiMicrosoftTeamsLogo } from "react-icons/pi";
+
 export function Layout203() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
           <div className="order-2 md:order-1">
             <img
@@ -25,11 +28,7 @@ export function Layout203() {
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div>
                 <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo"
-                  />
+                  <IoMdCalendar className="h-12 w-12" />
                 </div>
                 <h6 className="mb-3 text-md leading-[1.4] font-bold md:mb-4 md:text-xl">
                   Event Coordination
@@ -41,11 +40,7 @@ export function Layout203() {
               </div>
               <div>
                 <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo"
-                  />
+                  <PiMicrosoftTeamsLogo className="h-12 w-12" />
                 </div>
                 <h6 className="mb-3 text-md leading-[1.4] font-bold md:mb-4 md:text-xl">
                   Team Management
