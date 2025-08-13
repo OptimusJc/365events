@@ -1,11 +1,11 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
+import { ButtonLink } from "../../../components/ButtonLink";
 
 export function Header50() {
   return (
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="relative z-10 container">
+      <div className="relative z-10 container mx-auto">
         <div className="w-full max-w-lg">
           <p className="mb-3 font-semibold text-text-alternative md:mb-4">
             Empower
@@ -18,10 +18,12 @@ export function Header50() {
             in faith and integrity.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button title="Learn More">Learn More</Button>
-            <Button title="Sign Up" variant="secondary-alt">
+            <ButtonLink to="/about" variant="secondary">
+              Learn More
+            </ButtonLink>
+            <ButtonLink to="/contact" variant="tertiary">
               Sign Up
-            </Button>
+            </ButtonLink>
           </div>
         </div>
       </div>
