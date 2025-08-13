@@ -6,7 +6,7 @@ export function Header50() {
   return (
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="relative z-10 container mx-auto">
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-xl">
           <p className="mb-3 font-semibold text-text-alternative md:mb-4">
             Empower
           </p>
