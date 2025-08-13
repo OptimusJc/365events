@@ -74,7 +74,7 @@ export function Logo3() {
                   key={`first-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20"
+                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20 xl:max-h-28"
                 />
               ))}
             </div>
@@ -84,7 +84,7 @@ export function Logo3() {
                   key={`first-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20"
+                  className="mx-7 max-h-14 shrink-0 md:mx-10 md:max-h-18 lg:max-h-20 xl:max-h-28"
                 />
               ))}
             </div>
